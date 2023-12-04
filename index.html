@@ -10,23 +10,24 @@
             background-size: cover;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #333;
         }
 
         header {
-            background-color: #DAA520;
-            color: #fff;
+            background-color: #FFD700;
+            color: #333;
             padding: 15px;
             text-align: center;
         }
 
         nav {
-            background-color: #FFD700;
+            background-color: #333;
             padding: 10px;
         }
 
         nav a {
-            color: #333;
+            color: #fff;
             text-decoration: none;
             padding: 10px;
             margin: 0 10px;
@@ -34,13 +35,24 @@
 
         section {
             padding: 20px;
-            color: #333;
         }
 
         video {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
+        }
+
+        .movie-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .movie-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
         button {
@@ -52,7 +64,7 @@
         }
 
         footer {
-            background-color: #DAA520;
+            background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -67,28 +79,38 @@
 
     <nav>
         <a href="#home">Home</a>
-        <a href="#video">Video</a>
+        <a href="#movies">Movies</a>
+        <a href="#trailers">Trailers</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="home">
-        <h2>Welcome to Bollywood Magic</h2>
-        <p>Explore the enchanting world of Bollywood movies.</p>
-        <button>Watch Now</button>
+        <h2>Welcome to Bollywood Movies Hub</h2>
+        <p>Discover the magic of Bollywood cinema.</p>
+        <button>Explore Now</button>
     </section>
 
-    <section id="video">
-        <h2>Featured Movie</h2>
+    <section id="movies">
+        <h2>Featured Movies</h2>
+        <div class="movie-card">
+            <img src="movie1.jpg" alt="Movie 1">
+            <img src="movie2.jpg" alt="Movie 2">
+            <img src="movie3.jpg" alt="Movie 3">
+        </div>
+    </section>
+
+    <section id="trailers">
+        <h2>Latest Trailers</h2>
         <video controls>
-            <source src="bollywood-movie-trailer.mp4" type="video/mp4">
+            <source src="trailer1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
 
     <section id="about">
-        <h2>About Bollywood</h2>
-        <p>Discover the rich history and cultural impact of Bollywood cinema.</p>
+        <h2>About Bollywood Movies Hub</h2>
+        <p>Explore the rich and vibrant world of Bollywood cinema with us.</p>
     </section>
 
     <section id="contact">
@@ -110,3 +132,4 @@
 
 </body>
 </html>
+
