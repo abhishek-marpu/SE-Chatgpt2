@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollywood Movies Hub</title>
+    <style>
+        body {
+            background-image: url('bollywood-background.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #DAA520;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #FFD700;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            color: #333;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #FF4500;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #DAA520;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bollywood Movies Hub</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#video">Video</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Bollywood Magic</h2>
+        <p>Explore the enchanting world of Bollywood movies.</p>
+        <button>Watch Now</button>
+    </section>
+
+    <section id="video">
+        <h2>Featured Movie</h2>
+        <video controls>
+            <source src="bollywood-movie-trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="about">
+        <h2>About Bollywood</h2>
+        <p>Discover the rich history and cultural impact of Bollywood cinema.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Bollywood Movies Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
